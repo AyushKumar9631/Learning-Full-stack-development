@@ -5,39 +5,17 @@ I am following Love Babbar’s Full Stack Development YouTube lectures and docum
 
 Learning Path
 
-Web Development Fundamentals
-⬜ HTML
-⬜ CSS
-⬜ JavaScript
+Web Development Fundamentals: HTML, CSS, JavaScript
 
-Frontend Development
-⬜ React Basics
-⬜ Components and Props
-⬜ State and Hooks
-⬜ React Router
-⬜ Redux / State Management
+Frontend Development: React Basics, Components and Props, State and Hooks, React Router, Redux / State Management
 
-Backend Development
-⬜ Node.js Basics
-⬜ Express.js
-⬜ REST APIs
-⬜ Authentication & Authorization (JWT, OAuth)
+Backend Development: Node.js Basics, Express.js, REST APIs, Authentication & Authorization (JWT, OAuth)
 
-Database
-⬜ MongoDB Basics
-⬜ Mongoose ODM
-⬜ CRUD Operations
+Database: MongoDB Basics, Mongoose ODM, CRUD Operations
 
-Full Stack Projects
-⬜ Todo App
-⬜ Blog Application
-⬜ E-commerce Application
-⬜ Social Media Clone
+Full Stack Projects: Todo App, Blog Application, E-commerce Application, Social Media Clone
 
-Deployment & Tools
-⬜ Git & GitHub
-⬜ Deployment with Heroku / Vercel / Netlify
-⬜ Docker & CI/CD
+Deployment & Tools: Git & GitHub, Deployment with Heroku / Vercel / Netlify, Docker & CI/CD
 
 Goal
 
