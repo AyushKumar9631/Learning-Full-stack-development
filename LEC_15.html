@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        *{
+            margin:0;
+            border: 0;
+        }
+        h1{
+            /* playing with borders */
+            background-color: aquamarine;
+            border-style: solid;
+            border-width: 10px;
+            border-color: blue;
+            /* border-radius: 20px; */
+            border-top-left-radius: 20px;
+
+            /* playing with width and height */
+        }
+        .p1{
+            background-color: saddlebrown;
+            border: solid black 5px;
+            padding: 40px;
+            margin: 40px;
+            
+        }
+        .p2{
+            background-color: beige;
+            border-top: solid black 5px;
+            /* shorthand notation for padding */
+            /* top-right-bottom-left */
+            padding: 10px 20px 30px 40px;
+        }
+        .p3{
+            background-color: rebeccapurple;
+            /* vartical-horizontal */
+            padding: 20px 40px;
+        }
+        .p1,.p2,.p3,h1{
+            width: 75%;
+            /* height: 80px; */
+        }
+         span{
+            background-color: saddlebrown;
+            border: solid black 5px;
+            width: 75%;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lecture 15 Box and borders</h1>
+    <p class="p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi repudiandae provident quos culpa tempora doloremque incidunt recusandae delectus. Nostrum magni aut hic error praesentium ipsum accusamus atque. Eum iure illo molestiae ea minus veniam nisi debitis consequatur, vero distinctio, fugit possimus id, corrupti asperiores esse perferendis provident repellat omnis?</p>
+    <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi repudiandae provident quos culpa tempora doloremque incidunt recusandae delectus. Nostrum magni aut hic error praesentium ipsum accusamus atque. Eum iure illo molestiae ea minus veniam nisi debitis consequatur, vero distinctio, fugit possimus id, corrupti asperiores esse perferendis provident repellat omnis?</p>
+    <p class="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum nisi repudiandae provident quos culpa tempora doloremque incidunt recusandae delectus. Nostrum magni aut hic error praesentium ipsum accusamus atque. Eum iure illo molestiae ea minus veniam nisi debitis consequatur, vero distinctio, fugit possimus id, corrupti asperiores esse perferendis provident repellat omnis?</p>
+    <span>inline elements doesnt get effected by height and width</span>
+</body>
+</html>
