@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContainer{
+            border:2px solid black;
+            margin: 2px;
+            padding:2px;
+            background-color: aqua;
+            display: flex;
+        }
+        .subcontainer{
+            margin: 2px;
+            padding:2px;
+            width: 47%;
+            display:flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+        #para1{
+            background-color: beige;
+        }
+        #para2{
+            background-color: antiquewhite;
+        }
+
+        @media (max-width:800px){
+            .mainContainer{
+                flex-direction: column ;
+            }
+            .subcontainer{
+                width: 95%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="subcontainer">
+            <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid nisi saepe repellendus quo maiores dicta pariatur! Alias voluptatum possimus atque animi laborum molestias facilis ad a facere? Explicabo aspernatur repellendus debitis temporibus voluptatibus consequatur illum nesciunt at odio officiis quis, quidem magni dolorem doloremque esse dicta, sapiente necessitatibus aliquid. Error!</p>
+            <p id="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi deleniti inventore eius rem suscipit sint quibusdam unde voluptatibus accusantium similique voluptatem, doloribus aliquam repellendus corrupti nulla, earum vitae, cum labore.</p>
+        </div>
+        <img src="../LEC_17/4.jpg" alt="image" width="400px">
+    </div>
+</body>
+</html>
