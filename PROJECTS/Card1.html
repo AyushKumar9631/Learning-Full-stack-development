@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+
+            height:100vh;
+            width: 100vw;
+            background: #127399;
+            background: linear-gradient(90deg, rgba(18, 115, 153, 1) 0%, rgba(87, 199, 133, 1) 68%, rgba(237, 221, 83, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 20%;
+            height: 70%;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+        }
+        .card img{
+            width: 80%;
+            border-radius: 10px;
+        }
+        .card h2{
+            font-weight: bold;
+            font-size: 1.7rem;
+        }
+        .card p{
+            font-size: 1.3em;
+        }
+        @media (max-width:1000px) and (min-width:500px){
+            .card{
+                width: 45%;
+            }
+        }
+        @media (max-width:500px){
+            .card{
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="QR code.jpg" alt="code">
+            <h2> Improve your chilling skills and watch youtube</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ad optio illo debitis rem eius nobis impedit inventore expedita qui.</p>
+        </div>
+    </div>
+</body>
+</html>
