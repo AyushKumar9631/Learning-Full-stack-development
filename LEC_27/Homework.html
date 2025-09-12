@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+             height:100vh;
+            width: 100vw;
+            background: #0b688c;
+            background: linear-gradient(90deg, rgba(11, 104, 140, 1) 47%, rgba(37, 77, 56, 1) 100%, rgba(237, 221, 83, 1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width:60%;
+            height:60%;
+            background-color: rgb(84, 4, 84);
+            display: flex;
+        }
+        .leftBox{
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            justify-content: space-evenly;
+            overflow: auto;
+        }
+        .leftBox *{
+            width: 100%;
+            color: white;
+        }
+        .leftLower{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .leftLower *{
+            width: fit-content;
+        }
+        .rightBox{
+            height: 100%;
+            width: 50%;
+        }
+        .rightBox img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftBox">
+                <h1>Get Insights that help your business grow</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore accusantium expedita reprehenderit dolor repellendus velit adipisci rem ad modi corporis? Quia delectus voluptatibus et cupiditate?</p>
+                <div class="leftLower">
+                    <div class="first">
+                        <h2>10K+</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="first">
+                        <h2>214</h2>
+                        <p>Paid Users</p>
+                    </div>
+                    <div class="first">
+                        <h2>12M+</h2>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightBox">
+                <img src="icon.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
