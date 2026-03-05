@@ -1,0 +1,20 @@
+Event: Any announcement in the document eg(click, scroll)
+Event target: entity where event is recieved
+Event listener/handler: entity where response is written
+
+Syntax to add Listner: <EventTarget>.addListner(<event-type>,<function-> action>);
+event traverse from parent to child container
+target is reached via traversing up(Bubbling)
+
+three phases of Event: capturing, at target, bubbling.
+eventListener is applied at bubbling phase by default we can use it in capturing phase
+
+Event Object: can be used in parameter of event function
+Default Action: each tag have default action for eg clicking on anchor tag opens link
+default behavoiour can also be removed
+
+#Avoiding too many listners
+for same listners of same type use only one listner meaning use only one function
+for samy type of lstners use listner in parent tag and determine via event
+
+//Hw to know about DOM content loaded event and how to use this to dynamically add script
