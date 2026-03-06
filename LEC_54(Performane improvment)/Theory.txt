@@ -1,0 +1,13 @@
+reflow: process of caln position,dimention of element
+it is computationally expensive
+
+repaint: process of showing element picture by picture
+it is faster
+
+goal is to reduce reflow and repaint as much as possible
+
+in the code of js code 1: at each iteration we are using reflow and repaint;
+                  code 2: at each iteration we are only using reflow;
+                  hence, code 2 is faster.
+
+Document fragment: lightwt document object. here updation do not require neither reflow or repaint
