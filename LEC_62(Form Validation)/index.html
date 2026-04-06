@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        small{
+            color: red;
+            font-size: 12px;
+        }
+
+        #n_alert{
+            display: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="name" id="name">
+        <div id="n_alert">
+            <br>
+            <small> name should be greater than two characters</small>
+        </div>
+        <br><br>
+        <input required minlength="5" type="email" placeholder="email">
+        <br><br>
+        <input pattern="[a-z]{5,10}" type="text" placeholder="password">
+        <br><br>
+        <select>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+        <br><br>
+        <textarea placeholder="yell us about you"></textarea>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
