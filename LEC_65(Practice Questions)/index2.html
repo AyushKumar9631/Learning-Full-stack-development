@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards and forms</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        
+        }
+
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+            border: 2px saddlebrown solid ;
+            padding: 30px;
+            border-radius: 30px;
+            background-color: rgb(226, 125, 213);
+        }
+
+        input, select{
+            height: 35px;
+            width: 250px;
+            border-radius: 10px;
+            padding-left: 6px;
+            background-color: rgb(218, 168, 226);
+            color: rgb(118, 116, 116);
+        
+
+        }
+
+        .buttonsdiv{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        form button{
+            padding: 8px;
+            border-radius: 15px;
+            background-color: rgb(118, 42, 113);
+            color: white;
+        }
+
+        h3{
+            display: flex;
+            justify-content: center;
+            font-weight: bolder;
+            color: white;
+        }
+
+        .landingDiv{
+            display: flex;
+            justify-content: center;
+        }
+
+        .card{
+            height: 250px;
+            width: 400px;
+            overflow: hidden;
+            border-radius: 25px;
+            border: solid 4px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .E{
+            border-color: red;
+            background-color: rgba(255, 0, 0, 0.350);
+        }
+        .U{
+            border-color: yellow;
+            background-color: rgba(255, 255, 0, 0.350);
+        }
+        .I{
+            border-color: orange;
+            background-color: rgba(255, 166, 0, 0.350);
+        }
+        .N{
+            border-color: green;
+            background-color: rgba(0, 128, 0, 0.350);
+        }
+
+        .card-header{
+            
+            padding-right: 90px;
+            display: flex;
+            justify-content: space-between ;
+            align-items: center;
+        }
+
+        #profile-pic{
+            height: 70px;
+            width: 70px;
+            border-radius: 35px;
+        }
+
+        .leftButtons{
+            height: 250px;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .rightButtons{
+            height: 250px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .leftButtons img, .rightButtons button{
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        #E {
+            background-color: red;
+        }
+
+        #I {
+            background-color: orange;
+        }
+
+        #U {
+            background-color: yellow;
+        }
+
+        #N {
+            background-color: green;
+        }
+        #B {
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form>
+            <h3>Fill Details:</h3>
+            <input type="text" name="imageURL" id="imageURLinp", placeholder="Enter image URL">
+            <input type="text" name="imageURL" id="nameinp", placeholder="Enter your name">
+            <input type="text" name="imageURL" id="homeTowninp", placeholder="Enter your home town address">
+            <input type="text" name="imageURL" id="Purpose", placeholder="Enter your porpose of visit">
+            <select name="" id="categoryinp">
+                <option value="P">Select Urgency Level</option>
+                <option value="E">Emargency</option>
+                <option value="I">Important</option>
+                <option value="U">Urgent</option>
+                <option value="N">No rush</option>
+            </select>
+            <div class="buttonsdiv">
+                <button id="close">Close</button>
+                <button id="submit" type="submit">Submit</button>
+                
+            </div>
+            
+
+        </form>
+
+        <div class="landingDiv">
+            <div class="leftButtons">
+                <img id="plus" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAADFBMVEX///8AAABWVlZDQ0M9M7zHAAAA30lEQVR4nO3dwQ3CMBBFwcTpv2eEoANklhdmKvjvsjfLxwEAAAAAAAAAAAAA7HKtp2t6xkbny/SMjRT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2KewT+FvuM5J33gztUYLl0KFCv+i8P639BPvmdMzNlLYp7BPYZ/CPoV9CvsU9insU9insE9hn8I+hX0K+xT2KexT2KewT2Gfwj6FfQr7FPYp7FPYp7BPYZ/CPoV99/87DwAAAAAAAAAAAACmPQCsOgbmZwZE8QAAAABJRU5ErkJggg==" alt="">
+                <img id="up" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS41px21K1At7bc0WIxoCYvg3VhoHh5_IwB1Q&s" alt="">
+                <img id="down" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAADm5ubz8/MkJCQwMDD19fXw8PBXV1dQUFBZWVlTU1MuLi4pKSlYWFgmJiZeXl5mZmbExMRLS0vd3d2Dg4MfHx+tra2YmJjQ0NDh4eEODg6MjIxvb2/r6+toaGgYGBhDQ0M6OjoUjT9JAAAEKUlEQVR4nO3c6VbqMBQFYApaJgcUUVQcru//kBdvjCXNTihthhPu/n63y5yVM6QFHI2IiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIqHj3m9l6tX3IvYwTPWxX69nmvsOVL6vqn9ddHX1VAe1e1bJXR3fm4brSbiYplhbG2++qX5/9V74/Vo35NM3yBqs/Dlb9+O69dlMdmheSqHfGqje+S6efxrXVrIhE/TAX/elLvfuqZSk/UeuP9qJ9DfWpfbH8EOs7a81PnsvtCKul8ES1A/RG+GxfXs1EtxsrRfd886K+BTcIHhogRavqwrslW3CH3ESFAVZb/z1/0D1ChwYOcH2kqsbX6C6RIeIAr/xHmr3xJUxUebWIA7wcH79zjLpNtZTWUesVWuZthwD3IV6gexeyQsQ7eNEpQFeiiqpFvINdUlQRH+LQAF2JKuZ0gwPsmqIKbjdCahHXYLcm0xCcqMNTVHGM/vy7iAO8PjlAsYk6ZA62ja9giHkTFQd41StAkbUYqgY1cUOjXqAFnTYmTDjEVa4QQ8zBNlGJOoE72D9FFdxubnLsIk7Rvk2mIWZohBwTJjz6k9diuEFvw7WYeC5OZmgRQ2tQw7uYtBZrGGCYHfyGazFhouImE6IGNccBLlWIkxv054d30UOOWkwTYtwa1DK+nsI1OOwkg2Q7wIU/i7rgRI3+dYbpMkWKKlnazQQGGLbJNDIMDdxkQo4JU/IDHA4w3KC3JT7ApaxBDSdqpKf+yTxtiioJhwZO0RhjwpQsUadwB+OmqJJoLuYLMNEBDs/B+CmqJJiLqedgW/Q3cDlTVIn8sQ0eEzEHvS3qG7jcKapE/NgGn2RiHbbdotVi/hrUIn1sg2sw1ZgwRZmLuY5qWIRElZOiCm43A0LEAaZvMo3AiZr3qIbh0d8zRBxg2kFvC1iL0mpQw7vY48uaEo5qWKADnIyjGhako0o5qmEBalFqDWqDD3CSjmrYwLko66iGDfqGv/QUVXC76fRrG3lHNaz323B8kpExJkw9f22Dx4SEQW/rVYtl1KDW49c2eT586Q8PDc9Xi0oYEyZHR3Ulaild9NBJtVhWDWo4UWEtSnyi78IxF+2hIflxyQ8nqvVz6TJTVMHtZm7uIh4TsptMo0OilnNUw44+9ct+ou/iyNAouQY1nKg/tVjaUQ1zvNj4DrG8oxrmHBrnkKKK44z6UnyTaeBEhQVaXooquN2gqAsN0FWLlhJrUMPvblpkvpPpqkOilpuiCu6oB8rsooeO1GLJNajhofGj1DFh8oR4HgF6EvUcUlRxtJvym0wDDo3Sx4QJjP6yB73NqsXzqUGttYvntoPfjKFxLmPCNP76DfDrLAMcjab6f1K/yfsfhaE87xbrxe7If9wmIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiov/cX08aJw5PInkjAAAAAElFTkSuQmCC" alt="">    
+            </div>
+            <div class="card">
+            </div>
+            <div class="rightButtons">
+                <button id="B">X</button>
+                <button id="E"></button>
+                <button id="I"></button>
+                <button id="U"></button>
+                <button id="N"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
