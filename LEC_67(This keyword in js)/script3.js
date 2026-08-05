@@ -16,7 +16,8 @@ const userManager={
 
     submitForm: function(e){
         e.preventDefault();
-        console.log(this);
+        alert("form submitted");
+        console.log("form submitted");
     }
 }
 
