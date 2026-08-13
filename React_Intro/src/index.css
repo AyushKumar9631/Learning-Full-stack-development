@@ -109,3 +109,15 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+button{
+  background-color: lightgoldenrodyellow;
+  padding: 5px 10px;
+  color: black;
+}
+
+h2{
+  color: crimson;
+  background-color: #aa3bff;
+  width: 50%;
+}
